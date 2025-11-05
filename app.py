@@ -111,7 +111,7 @@ st.markdown("<p class='tagline'>Discover your next favorite movie with Cineva.</
 
 @st.cache_data(show_spinner=False)
 def fetch_poster(movie_id):
-    url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key=f01207551c40be749ec30ae3a346b268&language=en-US'
+    url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key=f01207551c40be749ec30ae3a34xxxxx&language=en-US' #Login & use your own API key
     for attempt in range(3):
         try:
             response = requests.get(url, timeout=1)
