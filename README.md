@@ -17,23 +17,22 @@ Cineva is a **movie recommendation system** built with **Python and Streamlit**.
 
 ---
 
-## Demo
+# Demo
 
-# Demo:
+<img src="demo/demo1.png" alt="Cineva Screenshot 1" width="70%">
+<img src="demo/demo2.png" alt="Cineva Screenshot 2" width="70%">
+<img src="demo/demo3.png" alt="Cineva Screenshot 3" width="70%">
 
-<img src="demo/1.png" alt="workflow" width="70%">
-
-<img src="demo/2.png" alt="workflow" width="70%">
-
-<img src="demo/3.png" alt="workflow" width="70%">
 
 
 ## Tech Stack
 
 - **Python** – Data processing, logic, and recommendation
-- **Streamlit** – Interactive web interface
+- **Scikit-learn** - similarity scores calculation & vectorization
+- **NLP** - text Processing(Stemming)
 - **Pandas** – Handling movie datasets
 - **Pickle & Gzip** – Precomputed similarity storage
+- **Streamlit** – Interactive web interface
 - **TMDb API** – Movie posters
 
 ---
@@ -60,16 +59,24 @@ pip install -r requirements.txt
 # Run the app
 streamlit run app.py
 ```
+## Projects Structure
+bash
+```
 Cineva/
 ├── app.py                  # Streamlit application
 ├── artifacts/
 │   ├── movie_list.pkl
 │   └── similarity.pkl.gz   # Compressed similarity matrix
-├── data/                   # Original CSV files
+├── demo/
+│   ├── demo1.png
+│   └── demo2.png
+|   └── demo3.png                   # Original CSV files
 ├── requirements.txt
+├── Movie_recommendation_system # Main Notebook
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
 ## How It Works
 
 1. User selects a movie from the dropdown.
